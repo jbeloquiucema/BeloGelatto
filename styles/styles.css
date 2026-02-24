@@ -936,27 +936,40 @@ h1{
     }
 
     .fundador {
-        grid-template-columns: 1fr 1fr;
-        /* 2 columnas */
-        gap: 22px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        /* centra lo que hay dentro */
     }
 
-    /* el texto ocupa todo el ancho (2 columnas) */
-    .fundador-texto {
-        grid-column: 1 / -1;
-        max-width: none;
-        text-align: center;
+    .fundador-img,
+    .fundador-img-der {
+        display: flex;
+        justify-content: center;
     }
 
     .fundador-img img,
     .fundador-img-der img {
-        height: 340px;
-        object-fit: cover;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .fundador-texto {
+        text-align: center;
     }
 
     .historia {
         max-width: 900px;
         padding-top: 10px;
+    }
+
+    .gustocontainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .sucursales-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
     }
 }
 
@@ -1022,5 +1035,15 @@ h1{
     .historia,
     .legado {
         padding-top: 10px;
+    }
+
+    .gustocontainer {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+    }
+
+    .sucursales-container {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
     }
 }
