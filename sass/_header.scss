@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: $principal;
+
+    .navbar {
+        background-color: $principal !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 16px 0;
+
+        .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* LOGO */
+        .navbar-brand {
+            padding: 0;
+
+            .logo {
+                height: 80px;
+                width: auto;
+                display: block;
+            }
+        }
+
+        /* LINKS */
+        .navbar-nav {
+            margin-left: 40px;
+            gap: 30px;
+
+            .nav-link {
+                font-size: 20px;
+                color: $acento;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 10px 12px;
+
+                &:hover,
+                &:focus {
+                    color: $acento-hover;
+                    text-decoration: underline;
+                    text-underline-offset: 6px;
+                }
+
+                &.active {
+                    color: $acento-hover;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            border: 0;
+            padding: 8px 10px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        /* MENÚ HAMBURGUESA (tablet/mobile) */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                margin-top: 12px;
+                padding: 10px 12px;
+                border-radius: 14px;
+                background: rgba(255, 255, 255, 0.45);
+                backdrop-filter: blur(6px);
+            }
+
+            .nav-link {
+                padding: 10px 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+@use "variables" as *;
+
+/* SECCIONES GENERALES */
+section {
+    padding: 40px 16px;
+}
+
+/* FUNDADOR */
+.fundador {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 16px;
+    display: grid;
+    grid-template-columns: 340px 1fr 320px;
+    gap: 40px;
+    align-items: center;
+
+    &-img,
+    &-img-der {
+        img {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+            display: block;
+        }
+    }
+
+    &-texto {
+        max-width: 620px;
+
+        h2 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            line-height: 1.7;
+        }
+    }
+}
+
+/* HISTORIA */
+.historia {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 12px;
+        line-height: 1.8;
+    }
+}
+
+/* LEGADO */
+.legado {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    p {
+        max-width: 800px;
+        margin: 0 auto 22px auto;
+        line-height: 1.7;
+    }
+
+    &-img {
+        width: 100%;
+        max-width: 1300px;
+        height: 480px;
+        object-fit: cover;
+        border-radius: 20px;
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+}
+
+/* TÍTULO CON LÍNEAS */
+.titulo-lineas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 10px 0 12px;
+
+    &::before,
+    &::after {
+        content: "";
+        flex: 1;
+        height: 2.5px;
+        background-color: lighten($principal, 10%);
+        max-width: 220px;
+    }
+}
+
+/* ANIMACIÓN */
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: aparecerSuave 1.8s ease forwards;
+}
+
+/* CAROUSEL */
+#carouselExampleIndicators {
+    max-width: 1000px;
+    margin: 60px auto;
+
+    .carousel-item {
+        img {
+            height: 480px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 60px;
+        height: 60px;
+        background-size: 100% 100%;
+    }
+}
+
+/* FAQ */
+.faq {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 16px;
+
+    .accordion {
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 12px 28px $sombra;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .accordion-item {
+        border: 0;
+        background: #ffffff;
+    }
+
+    .accordion-button {
+        background-color: $principal;
+        color: $acento-hover;
+        font-weight: 700;
+        padding: 18px;
+
+        &:hover {
+            filter: brightness(0.98);
+        }
+
+        &:not(.collapsed) {
+            background-color: $acento;
+            color: #fff;
+            box-shadow: none;
+        }
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    .accordion-body {
+        background-color: lighten($fondo, 3%);
+        line-height: 1.6;
+        padding: 18px 18px 22px;
+    }
+}

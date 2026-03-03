@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+$fondo: #f4efe4;
+$principal: #BAE0DB;
+$acento: #A18291;
+$acento-hover: #6f2448;
+$sombra: rgba(0, 0, 0, 0.08);
+$fuente: 'Google Sans', sans-serif;
+
+
+
+// MIXIN
+
+@mixin tablet{
+    @media (min-width:480px) and (max-width:960px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width:479px){
+        @content;
+    }
+}
+
+@mixin flex-box($dir, $wr, $jc, $ai){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wr;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
