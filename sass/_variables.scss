@@ -31,3 +31,13 @@ $fuente: 'Google Sans', sans-serif;
     align-items: $ai;
 }
 
+// EXTEND
+
+%flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
