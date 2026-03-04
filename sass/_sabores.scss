@@ -17,24 +17,12 @@
     padding: 0 70px;
 }
 
-/* CÍRCULO DEL SABOR */
-// .gusto {
-//     width: 100%;
-//     aspect-ratio: 1 / 1;
-//     border-radius: 50%;
-//     overflow: hidden;
-//     cursor: pointer;
-//     position: relative;
-
-//     &:hover .gustonombre {
-//         opacity: 1;
-//     }
-// }
-
 .gusto {
     width: 100%;
     aspect-ratio: 1 / 1;
-    perspective: 1000px;
+    perspective: 1200px;
+    cursor: pointer;
+    
 }
 
 .gusto-inner {
@@ -79,13 +67,6 @@
 }
 
 
-/* IMAGEN */
-// .gustoimg {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-// }
-
 /* TÍTULO */
 .saborestitle {
     width: 100%;
@@ -114,3 +95,5 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+
