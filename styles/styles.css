@@ -572,8 +572,8 @@ section {
 .titulo-lineas::before, .titulo-lineas::after {
   content: "";
   flex: 1;
-  height: 2.5px;
-  background-color: rgb(221.19, 239.81, 237.36);
+  height: 10px;
+  background-color: white;
   max-width: 220px;
 }
 
