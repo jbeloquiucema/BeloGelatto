@@ -96,8 +96,8 @@ section {
     &::after {
         content: "";
         flex: 1;
-        height: 10px; 
-        background-color: lighten($principal, 30%);
+        height: 3px; 
+        background-color: lighten($acento, 10%);
         max-width: 220px;
     }
 }
