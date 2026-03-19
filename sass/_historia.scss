@@ -180,7 +180,7 @@ section {
     }
 
     .accordion-body {
-        background-color: lighten($fondo, 3%);
+        background-color: $acento($fondo, 3%);
         line-height: 1.6;
         padding: 18px 18px 22px;
     }
