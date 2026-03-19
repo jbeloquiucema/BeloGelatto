@@ -1,5 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
+}
+
+body {
+  background: #f4efe4;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -126,36 +141,34 @@ footer .rslink .wpp:hover {
   margin: 60px auto;
   padding: 0 20px;
 }
-
-.bloque {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+.index-alt .bloque {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
   margin-bottom: 80px;
 }
-
-.bloque-img {
-  width: 100%;
+.index-alt .bloque-img {
+  width: 50%;
   height: 500px;
   object-fit: cover;
   border-radius: 18px;
   display: block;
 }
-
-.bloque-texto {
-  max-width: 600px;
+.index-alt .bloque-texto {
+  width: 50%;
 }
-.bloque-texto h2 {
+.index-alt .bloque-texto h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.index-alt .bloque-texto h2 {
   font-size: 42px;
   margin-bottom: 20px;
 }
-.bloque-texto p {
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-.index-btn {
+.index-alt .index-btn {
   display: inline-block;
   margin-top: 10px;
   font-weight: 700;
@@ -646,21 +659,6 @@ section {
   background-color: rgb(248.4289473684, 245.4421052632, 238.8710526316);
   line-height: 1.6;
   padding: 18px 18px 22px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Google Sans", sans-serif;
-}
-
-body {
-  background: #f4efe4;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 @media (min-width: 480px) and (max-width: 960px) {

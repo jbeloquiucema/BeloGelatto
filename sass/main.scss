@@ -1,6 +1,7 @@
 // sass --watch sass/main.scss styles/styles.css
 
 @use "variables";
+@use "base";
 @use "header";
 @use "footer";
 @use "index";
@@ -8,5 +9,4 @@
 @use "sabores";
 @use "contacto";
 @use "historia";
-@use "base";
 @use "responsive";
